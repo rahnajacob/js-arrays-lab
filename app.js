@@ -222,5 +222,11 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 
 Complete Exercise 15 in the space below:
 */
-
+let total = Number("");
+for (let i = 0; i < numArrays.length; i++) {
+   const nestedNumArrays = numArrays[i];
+   for (let j = 0; j < nestedNumArrays.length; j++) {
+      total = total + nestedNumArrays[j];
+   }
+}
 console.log('Exercise 15 result:\n', total);
